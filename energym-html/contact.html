@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Contactez-nous</title>
+  <style>
+    .header .btn { display: none; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 25px;
+  transition: padding var(--transition-1);
+  z-index: 4;
+}
+
+.header.active {
+  background-color: var(--white);
+  padding-block: 15px;
+  box-shadow: var(--shadow-1);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+    :root {
+
+/**
+ * colors
+ */
+
+--sky-blue-crayola: hsl(188, 64%, 60%);
+--raisin-black_90: hsla(240, 8%, 12%, 0.9);
+--raisin-black-1: hsl(240, 8%, 17%);
+--raisin-black-2: hsl(240, 8%, 12%);
+--majorelle-blue: hsl(241, 77%, 63%);
+--blue-ryb_80: hsla(241, 88%, 60%, 0.8);
+--bittersweet: hsl(0, 100%, 69%);
+--eerie-black: hsl(0, 0%, 13%);
+--ghost-white: hsl(230, 60%, 98%);
+--light-gray: hsl(0, 0%, 80%);
+--slate-gray: hsl(225, 8%, 48%);
+--cool-gray: hsl(225, 11%, 59%);
+--gainsboro: hsl(217, 16%, 90%);
+--mustard: hsl(47, 100%, 69%);
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--onyx: hsl(240, 5%, 26%);
+--jet: hsl(0, 0%, 21%);
+
+/**
+ * gradient
+ */
+
+--gradient: radial-gradient(ellipse at center, hsla(0, 0%, 0%, 0.25), transparent 80%);
+
+/**
+ * typography
+ */
+
+--ff-dm-sans: 'DM Sans', sans-serif;
+
+--fs-1: 4rem;
+--fs-2: 3.5rem;
+--fs-3: 2.4rem;
+--fs-4: 2.2rem;
+--fs-5: 2rem;
+--fs-6: 1.8rem;
+--fs-7: 1.7rem;
+--fs-8: 1.5rem;
+--fs-9: 1.4rem;
+
+--fw-500: 500;
+--fw-700: 700;
+
+/**
+ * spacing
+ */
+
+--section-padding: 100px;
+
+/**
+ * shadow
+ */
+
+--shadow-1: 0px 2px 50px hsla(223, 40%, 76%, 0.3);
+--shadow-2: 0px -2px 12px hsl(252, 29%, 93%);
+--shadow-3: 0px 4px 4px hsla(231, 20%, 49%, 0.06);
+--shadow-4: 0px 15px 30px hsla(210, 30%, 32%, 0.05);
+--shadow-5: 0px 15px hsla(241, 62%, 34%, 0.04);
+
+/**
+ * radius
+ */
+
+--radius-8: 8px;
+--radius-10: 10px;
+--radius-15: 15px;
+--radius-20: 20px;
+
+/**
+ * transition
+ */
+
+--transition-1: 0.25s ease;
+--transition-2: 0.5s ease;
+--cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+--cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+
+}
+
+
+
+
+
+/*-----------------------------------*\
+#RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+li { list-style: none; }
+
+a,
+img,
+span,
+input,
+button,
+ion-icon { display: block; }
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img { height: auto; }
+
+input,
+button {
+background: none;
+border: none;
+font: inherit;
+}
+
+input { width: 100%; }
+
+button { cursor: pointer; }
+
+ion-icon { pointer-events: none; }
+
+html {
+font-family: var(--ff-dm-sans);
+font-size: 10px;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--white);
+color: var(--slate-gray);
+font-size: 1.6rem;
+line-height: 1.75;
+}
+
+:focus-visible { outline-offset: 4px; }
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track { background-color: hsl(0, 0%, 98%); }
+
+::-webkit-scrollbar-thumb { background-color: hsl(0, 0%, 80%); }
+
+::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      margin-inline: auto;
+
+    }
+
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-info .social-media {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .contact-info .social-media a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .return-home {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.return-home .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:hsl(47, 100%, 69%);;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.return-home .button:hover {
+  background-color: #555;
+}
+header {
+  text-align: center;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: #555;
+}
+.navbar-link {
+  font-size: var(--fs-9);
+  font-weight: var(--fw-700);
+  padding-block: 15px;
+  text-transform: uppercase;
+  transition: var(--transition-1);
+}
+
+.navbar-link:is(:hover, :focus) { color: var(--mustard); }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <h1>Contactez-nous</h1>
+    <div class="contact-info">
+      <p>Email : <a href="mailto:kouda@gmail.com">agence.kouda@gmail.com</a></p>
+      <p>Numéro de téléphone : <a href="tel:06 95 80 08 20">06 95 80 08 20</a></p>
+      <div class="social-media">
+        <a href="https://www.snapchat.com/add/koured_aurelien" target="_blank" rel="noopener noreferrer">Snapchat</a>
+      </div>
+      
+    </div>
+    
+  </div>
+ <center> <div class="return-home">
+    <a href="index.html" class="button">Retour à l'accueil</a>
+  </div></center> 
+</body>
+</html>
