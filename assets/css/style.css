@@ -267,7 +267,7 @@ body {
 .btn:is(:hover, :focus)::after { transform-origin: left; }
 
 .btn-primary {
-  background-color: var(--eerie-black);
+  background-color: var(--mustard);
   color: var(--white);
 }
 
@@ -353,7 +353,7 @@ body {
 }
 
 .header.active {
-  background-color: var(--white);
+  background-color: var(--cool-gray);
   padding-block: 15px;
   box-shadow: var(--shadow-1);
 }
@@ -517,7 +517,7 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
-.service { background-color: var(--eerie-black); }
+.service { background-color: var(--mustard); }
 
 .service .section-title { margin-block: 30px 60px; }
 
@@ -627,7 +627,7 @@ body {
   #PROJECT
 \*-----------------------------------*/
 
-.project { background-color: var(--eerie-black); }
+.project { background-color: var(--mustard); }
 
 .project .section-title { margin-block: 20px 60px; }
 
@@ -653,7 +653,7 @@ body {
 .filter-btn:is(:hover, :focus) { color: var(--raisin-black-1); }
 
 .filter-btn.active {
-  background-color: var(--white);
+  background-color: var(--cool-gray);
   color: var(--raisin-black-1);
   box-shadow: var(--shadow-4);
 }
@@ -924,7 +924,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 30px;
-  background-color: var(--majorelle-blue);
+  background-color: var(--cool-gray);
   color: var(--white);
   font-size: 18px;
   padding: 16px;
@@ -1210,7 +1210,7 @@ body {
 
   .navbar-link {
     position: relative;
-    color: var(--cool-gray);
+    color: var(--white);
     text-transform: capitalize;
     font-size: unset;
     font-weight: var(--fw-500);
@@ -1226,7 +1226,7 @@ body {
     width: 0;
     height: 4px;
     border-radius: 5px;
-    background-color: var(--majorelle-blue);
+    background-color: var(--mustard);
     transition: var(--transition-1);
   }
 
