@@ -152,7 +152,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--eerie-black);
   color: var(--slate-gray);
   font-size: 1.6rem;
   line-height: 1.75;
@@ -184,13 +184,13 @@ body {
 .h2 { letter-spacing: -2px; }
 
 .h1 {
-  color: var(--black);
+  color: var(--white);
   font-size: var(--fs-1);
   line-height: 1.1;
 }
 
 .h2,
-.h3 { color: var(--raisin-black-1); }
+.h3 { color: var(--white); }
 
 .h2 {
   font-size: var(--fs-2);
@@ -267,7 +267,7 @@ body {
 .btn:is(:hover, :focus)::after { transform-origin: left; }
 
 .btn-primary {
-  background-color: var(--majorelle-blue);
+  background-color: var(--eerie-black);
   color: var(--white);
 }
 
@@ -517,7 +517,7 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
-.service { background-color: var(--ghost-white); }
+.service { background-color: var(--eerie-black); }
 
 .service .section-title { margin-block: 30px 60px; }
 
@@ -529,10 +529,10 @@ body {
 
 .service-card {
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--eerie-black);
   padding-block-end: 40px;
-  border-block-end: 3px solid transparent;
-  box-shadow: var(--shadow-3);
+  border-block-end: 3px solid --white;
+  box-shadow: var(--shadow-2);
   transition: var(--transition-1);
 }
 
@@ -627,7 +627,7 @@ body {
   #PROJECT
 \*-----------------------------------*/
 
-.project { background-color: var(--ghost-white); }
+.project { background-color: var(--eerie-black); }
 
 .project .section-title { margin-block: 20px 60px; }
 
@@ -1216,7 +1216,7 @@ body {
     font-weight: var(--fw-500);
   }
 
-  .navbar-link:is(:hover, :focus) { color: var(--raisin-black-1); }
+  .navbar-link:is(:hover, :focus) { color: var(--white); }
 
   .navbar-link::before {
     content: "";
@@ -1246,7 +1246,7 @@ body {
    */
 
   .hero {
-    background-image: linear-gradient(to right, var(--white) 79%, var(--mustard) 79%);
+    background-image: linear-gradient(to right, var(--eerie-black) 79%, var(--mustard) 79%);
     overflow: hidden;
   }
 
